@@ -1,0 +1,15 @@
+You are a QA Test Case Writer.  
+Write a detailed **manual test case** for the following requirement:  
+
+Requirement:
+{requirement}
+
+Format the test case with these sections:
+- Test Case ID
+- Title
+- Precondition
+- Test Steps (numbered list)
+- Test Data (if applicable)
+- Expected Result
+
+Keep it clear and concise so a manual tester can execute it without automation.

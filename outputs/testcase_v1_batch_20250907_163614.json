@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-09-07T16:36:14.194020",
+  "version": "v1",
+  "mode": "batch",
+  "requirement": "User should be able to log in using email and password.",
+  "generated_output": [
+    "{\n    \"test_cases\": [\n        {\n            \"test_case\": \"TC_001_Login_with_valid_credentials\",\n            \"objective\": \"Verify user can log in with valid email and password\",\n            \"preconditions\": [\"User has a registered account\", \"Network connection is stable\"],\n            \"test_data\": [\"email1@example.com\", \"password123\"],\n            \"test_steps\": [\n                \"Open login page\",\n                \"Enter email: <test_data[0]>\",\n                \"Enter password: <test_data[1]>\",\n                \"Click on Login button\"\n            ],\n            \"expected_results\": [\n                \"User is logged in successfully\",\n                \"Redirected to dashboard or home page\"\n            ]\n        },\n        {\n            \"test_case\": \"TC_002_Login_with_invalid_email\",\n            \"objective\": \"Verify user cannot log in with invalid email\",\n            \"preconditions\": [\"User has a registered account\", \"Network connection is stable\"],\n            \"test_data\": [\"invalid_email\", \"password123\"],\n            \"test_steps\": [\n                \"Open login page\",\n                \"Enter email: <test_data[0]>\",\n                \"Enter password: <test_data[1]>\",\n                \"Click on Login button\"\n            ],\n            \"expected_results\": [\n                \"Error message is displayed saying 'Invalid email or password'\",\n                \"User is not logged in\"\n            ]\n        },\n        {\n            \"test_case\": \"TC_003_Login_with_weak_password\",\n            \"objective\": \"Verify user cannot log in with weak password\",\n            \"preconditions\": [\"User has a registered account\", \"Network connection is stable\"],\n            \"test_data\": [\"email1@example.com\", \"weakpassword\"],\n            \"test_steps\": [\n                \"Open login page\",\n                \"Enter email: <test_data[0]>\",\n                \"Enter password: <test_data[1]>\",\n                \"Click on Login button\"\n            ],\n            \"expected_results\": [\n                \"Error message is displayed saying 'Invalid email or password'\",\n                \"User is not logged in\"\n            ]\n        },\n        {\n            \"test_case\": \"TC_004_Login_with_locked_account\",\n            \"objective\": \"Verify user cannot log in with locked account\",\n            \"preconditions\": [\"User has a registered account\", \"Account is locked due to multiple failed login attempts\"],\n            \"test_data\": [\"email1@example.com\", \"password123\"],\n            \"test_steps\": [\n                \"Open login page\",\n                \"Enter email: <test_data[0]>\",\n                \"Enter password: <test_data[1]>\",\n                \"Click on Login button\"\n            ],\n            \"expected_results\": [\n                \"Error message is displayed saying 'Account locked due to multiple failed login attempts'\",\n                \"User is not logged in\"\n            ]\n        },\n        {\n            \"test_case\": \"TC_005_Login_with_temporarily_blocked_account\",\n            \"objective\": \"Verify user cannot log in with temporarily blocked account\",\n            \"preconditions\": [\"User has a registered account\", \"Account is temporarily blocked due to suspicious activity\"],\n            \"test_data\": [\"email1@example.com\", \"password123\"],\n            \"test_steps\": [\n                \"Open login page\",\n                \"Enter email: <test_data[0]>\",\n                \"Enter password: <test_data[1]>\",\n                \"Click on Login button\"\n            ],\n            \"expected_results\": [\n                \"Error message is displayed saying 'Account temporarily blocked due to suspicious activity'\",\n                \"User is not logged in\"\n            ]\n        }\n    ]\n}"
+  ],
+  "structured_test_cases": [
+    {
+      "test_cases": [
+        {
+          "test_case": "TC_001_Login_with_valid_credentials",
+          "objective": "Verify user can log in with valid email and password",
+          "preconditions": [
+            "User has a registered account",
+            "Network connection is stable"
+          ],
+          "test_data": [
+            "email1@example.com",
+            "password123"
+          ],
+          "test_steps": [
+            "Open login page",
+            "Enter email: <test_data[0]>",
+            "Enter password: <test_data[1]>",
+            "Click on Login button"
+          ],
+          "expected_results": [
+            "User is logged in successfully",
+            "Redirected to dashboard or home page"
+          ]
+        },
+        {
+          "test_case": "TC_002_Login_with_invalid_email",
+          "objective": "Verify user cannot log in with invalid email",
+          "preconditions": [
+            "User has a registered account",
+            "Network connection is stable"
+          ],
+          "test_data": [
+            "invalid_email",
+            "password123"
+          ],
+          "test_steps": [
+            "Open login page",
+            "Enter email: <test_data[0]>",
+            "Enter password: <test_data[1]>",
+            "Click on Login button"
+          ],
+          "expected_results": [
+            "Error message is displayed saying 'Invalid email or password'",
+            "User is not logged in"
+          ]
+        },
+        {
+          "test_case": "TC_003_Login_with_weak_password",
+          "objective": "Verify user cannot log in with weak password",
+          "preconditions": [
+            "User has a registered account",
+            "Network connection is stable"
+          ],
+          "test_data": [
+            "email1@example.com",
+            "weakpassword"
+          ],
+          "test_steps": [
+            "Open login page",
+            "Enter email: <test_data[0]>",
+            "Enter password: <test_data[1]>",
+            "Click on Login button"
+          ],
+          "expected_results": [
+            "Error message is displayed saying 'Invalid email or password'",
+            "User is not logged in"
+          ]
+        },
+        {
+          "test_case": "TC_004_Login_with_locked_account",
+          "objective": "Verify user cannot log in with locked account",
+          "preconditions": [
+            "User has a registered account",
+            "Account is locked due to multiple failed login attempts"
+          ],
+          "test_data": [
+            "email1@example.com",
+            "password123"
+          ],
+          "test_steps": [
+            "Open login page",
+            "Enter email: <test_data[0]>",
+            "Enter password: <test_data[1]>",
+            "Click on Login button"
+          ],
+          "expected_results": [
+            "Error message is displayed saying 'Account locked due to multiple failed login attempts'",
+            "User is not logged in"
+          ]
+        },
+        {
+          "test_case": "TC_005_Login_with_temporarily_blocked_account",
+          "objective": "Verify user cannot log in with temporarily blocked account",
+          "preconditions": [
+            "User has a registered account",
+            "Account is temporarily blocked due to suspicious activity"
+          ],
+          "test_data": [
+            "email1@example.com",
+            "password123"
+          ],
+          "test_steps": [
+            "Open login page",
+            "Enter email: <test_data[0]>",
+            "Enter password: <test_data[1]>",
+            "Click on Login button"
+          ],
+          "expected_results": [
+            "Error message is displayed saying 'Account temporarily blocked due to suspicious activity'",
+            "User is not logged in"
+          ]
+        }
+      ]
+    }
+  ]
+}

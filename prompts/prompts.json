@@ -1,0 +1,12 @@
+[
+  {
+    "version": "v1",
+    "description": "Manual test case generation in structured JSON format",
+    "template": "You are a senior QA engineer. Generate detailed manual test cases for the following requirement:\n\n{requirement}\n\nReturn the output **only in valid JSON** format (no explanations, no markdown). The JSON must be an array of objects, where each object has the following structure:\n\n[\n  {\n    \"test_case\": \"Unique ID or Title of the test case\",\n    \"objective\": \"Purpose of this test case\",\n    \"preconditions\": [\"Any preconditions required\"],\n    \"test_data\": [\"List of test data items\"],\n    \"test_steps\": [\"Step 1\", \"Step 2\", \"...\"],\n    \"expected_results\": [\"Expected result 1\", \"Expected result 2\"],\n    \"variations\": [\"Optional variations if any\"],\n    \"edge_cases\": [\"Edge cases or negative tests\"]\n  }\n]\n\n⚠️ Important: Do not include any text outside of the JSON. Do not include markdown. Make sure it is valid JSON."
+  },
+  {
+    "version": "v2",
+    "description": "Context-aware test case generation with deeper coverage",
+    "template": "You are an expert QA engineer with knowledge of functional, negative, and edge case testing.\n\nContext:\nThe requirement is provided in JSON format. It describes the application's pages, fields, actions, and flows. Treat this JSON as the **single source of truth** for how the application should behave.\n\nYour task:\n1. Carefully analyze the requirement JSON.\n2. Generate comprehensive test cases covering:\n   - Positive functional flows\n   - Negative scenarios (invalid inputs, wrong sequences, missing data)\n   - Edge cases (boundary values, unusual inputs)\n   - Alternate flows (social logins, multiple modes)\n3. Each test case must be structured as a JSON object with the following fields:\n\n[\n  {\n    \"test_case\": \"Unique ID or descriptive title\",\n    \"objective\": \"Purpose of this test case\",\n    \"preconditions\": [\"List any preconditions\"],\n    \"test_data\": [\"Test data values\"],\n    \"test_steps\": [\"Step 1\", \"Step 2\", \"Step 3\"],\n    \"expected_results\": [\"Expected behavior after each step\"],\n    \"variations\": [\"Any alternative paths\"],\n    \"edge_cases\": [\"Special or boundary conditions\"]\n  }\n]\n\n⚠️ Output Instructions:\n- Return **only valid JSON** (no markdown, no explanations).\n- Must be a valid JSON array.\n- Each test case must reference elements explicitly from the requirement JSON.\n\nRequirement JSON:\n{requirement}"
+  }
+]
