@@ -1,0 +1,2 @@
+8. Password Masking by Default
+- On page load, password field should be masked (••••).

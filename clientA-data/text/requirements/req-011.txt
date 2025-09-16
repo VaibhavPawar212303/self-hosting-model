@@ -1,0 +1,2 @@
+10. Sign Up & Help Links
+- Verify "Sign up now" and "Help & Support" links redirect to correct pages.

@@ -1,0 +1,4 @@
+3. Forgot Password Link
+- Click on "Forgotten your password?".
+- Expected: User is redirected to password recovery page.
+Negative Scenarios

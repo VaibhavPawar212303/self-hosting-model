@@ -1,0 +1,5 @@
+ID: REQ-009
+Title: 8. Password Masking by Default
+Steps:
+  1. - On page load, password field should be masked (••••).
+Expected Result: Expected result not specified.

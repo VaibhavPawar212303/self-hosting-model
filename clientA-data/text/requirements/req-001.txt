@@ -1,0 +1,4 @@
+Login Page Test Cases
+Preconditions:
+User is on the login page (https://app.clippd.com/login).
+Positive Scenarios

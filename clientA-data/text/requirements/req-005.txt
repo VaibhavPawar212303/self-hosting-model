@@ -1,0 +1,4 @@
+4. Invalid Email Format
+- Enter 'abc' as email and a valid password.
+- Click "Log in".
+- Expected: Show error: "Please enter a valid email address".

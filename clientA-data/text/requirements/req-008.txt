@@ -1,0 +1,5 @@
+7. Unregistered Email
+- Enter email not in the system and valid password.
+- Click "Log in".
+- Expected: Show error: "Account does not exist".
+Security & Usability

@@ -1,0 +1,4 @@
+2. Remember Password Visibility
+- Enter any password.
+- Click the eye icon.
+- Expected: Password text becomes visible.

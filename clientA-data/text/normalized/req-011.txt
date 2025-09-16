@@ -1,0 +1,5 @@
+ID: REQ-011
+Title: 10. Sign Up & Help Links
+Steps:
+  1. - Verify "Sign up now" and "Help & Support" links redirect to correct pages.
+Expected Result: Expected result not specified.

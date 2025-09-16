@@ -1,0 +1,6 @@
+ID: REQ-002
+Title: 1. Valid Login
+Steps:
+  1. - Enter registered email and correct password.
+  2. - Click "Log in".
+Expected Result: User should be redirected to the dashboard.

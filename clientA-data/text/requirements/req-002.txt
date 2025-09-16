@@ -1,0 +1,4 @@
+1. Valid Login
+- Enter registered email and correct password.
+- Click "Log in".
+- Expected: User should be redirected to the dashboard.

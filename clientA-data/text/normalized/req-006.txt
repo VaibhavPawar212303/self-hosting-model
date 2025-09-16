@@ -1,0 +1,6 @@
+ID: REQ-006
+Title: 5. Incorrect Password
+Steps:
+  1. - Enter valid email and wrong password.
+  2. - Click "Log in".
+Expected Result: Show error: "Invalid email or password".

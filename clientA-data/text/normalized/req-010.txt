@@ -1,0 +1,5 @@
+ID: REQ-010
+Title: 9. Captcha Presence
+Steps:
+  1. - Verify reCAPTCHA appears at the bottom right.
+Expected Result: User must solve captcha if required.

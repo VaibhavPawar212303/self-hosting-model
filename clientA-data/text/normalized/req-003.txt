@@ -1,0 +1,6 @@
+ID: REQ-003
+Title: 2. Remember Password Visibility
+Steps:
+  1. - Enter any password.
+  2. - Click the eye icon.
+Expected Result: Password text becomes visible.

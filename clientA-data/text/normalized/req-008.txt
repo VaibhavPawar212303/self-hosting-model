@@ -1,0 +1,7 @@
+ID: REQ-008
+Title: 7. Unregistered Email
+Steps:
+  1. - Enter email not in the system and valid password.
+  2. - Click "Log in".
+  3. Security & Usability
+Expected Result: Show error: "Account does not exist".

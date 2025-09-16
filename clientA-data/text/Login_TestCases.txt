@@ -1,0 +1,40 @@
+Login Page Test Cases
+Preconditions:
+User is on the login page (https://app.clippd.com/login).
+Positive Scenarios
+1. Valid Login
+- Enter registered email and correct password.
+- Click "Log in".
+- Expected: User should be redirected to the dashboard.
+2. Remember Password Visibility
+- Enter any password.
+- Click the eye icon.
+- Expected: Password text becomes visible.
+3. Forgot Password Link
+- Click on "Forgotten your password?".
+- Expected: User is redirected to password recovery page.
+Negative Scenarios
+4. Invalid Email Format
+- Enter 'abc' as email and a valid password.
+- Click "Log in".
+- Expected: Show error: "Please enter a valid email address".
+5. Incorrect Password
+- Enter valid email and wrong password.
+- Click "Log in".
+- Expected: Show error: "Invalid email or password".
+6. Empty Fields
+- Leave email and password empty.
+- Click "Log in".
+- Expected: Show error: "Email is required", "Password is required".
+7. Unregistered Email
+- Enter email not in the system and valid password.
+- Click "Log in".
+- Expected: Show error: "Account does not exist".
+Security & Usability
+8. Password Masking by Default
+- On page load, password field should be masked (••••).
+9. Captcha Presence
+- Verify reCAPTCHA appears at the bottom right.
+- Expected: User must solve captcha if required.
+10. Sign Up & Help Links
+- Verify "Sign up now" and "Help & Support" links redirect to correct pages.

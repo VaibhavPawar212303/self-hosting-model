@@ -1,0 +1,6 @@
+ID: REQ-004
+Title: 3. Forgot Password Link
+Steps:
+  1. - Click on "Forgotten your password?".
+  2. Negative Scenarios
+Expected Result: User is redirected to password recovery page.

@@ -1,0 +1,4 @@
+5. Incorrect Password
+- Enter valid email and wrong password.
+- Click "Log in".
+- Expected: Show error: "Invalid email or password".

@@ -1,0 +1,6 @@
+ID: REQ-005
+Title: 4. Invalid Email Format
+Steps:
+  1. - Enter 'abc' as email and a valid password.
+  2. - Click "Log in".
+Expected Result: Show error: "Please enter a valid email address".

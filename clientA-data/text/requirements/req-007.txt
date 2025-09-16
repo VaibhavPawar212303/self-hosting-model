@@ -1,0 +1,4 @@
+6. Empty Fields
+- Leave email and password empty.
+- Click "Log in".
+- Expected: Show error: "Email is required", "Password is required".

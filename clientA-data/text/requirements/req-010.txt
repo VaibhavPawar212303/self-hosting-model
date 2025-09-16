@@ -1,0 +1,3 @@
+9. Captcha Presence
+- Verify reCAPTCHA appears at the bottom right.
+- Expected: User must solve captcha if required.
